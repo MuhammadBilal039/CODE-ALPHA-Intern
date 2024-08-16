@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #ecf4fb;
+  background-color: #222121;
 }
 
 h1 {
@@ -26,7 +26,7 @@ h1 {
   height: 230px;
   padding: 5px;
   filter: grayscale(50%);
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .gallery img:hover {
@@ -68,7 +68,7 @@ h1 {
 }
 
 .full-img img {
-  width: 90%;
+  width: 100%;
   max-width: 500px;
 }
 
