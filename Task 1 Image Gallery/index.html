@@ -6,12 +6,17 @@
     <title>Image Gallery Design</title>
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/lightbox.min.css" />
+    <script src="./JS/app.js" defer></script>
     <script src="./JS/lightbox-plus-jquery.min.js"></script>
   </head>
   <body>
     <h1>Image Gallery Design</h1>
     <div class="gallery">
-      <a href="./Images/pic-1.jpg" data-lightbox="my-gallery">
+      <a
+        href="./Images/pic-1.jpg"
+        data-lightbox="my-gallery"
+        data-title="This is cat"
+      >
         <img src="./Images//pic1-small.jpg" alt="" />
       </a>
       <a href="./Images/pic-2.jpg" data-lightbox="my-gallery">
@@ -43,8 +48,24 @@
       </a>
     </div>
 
+    <div class="full-img" id="fullImgBox">
+      <img src="./Images/img1.jpg" id="fullImg" />
+      <span onclick="closeFullImg()">X</span>
+    </div>
+
     <div class="image-gallery">
-      <img src="./Images/" alt="">
+      <img src="./Images/img1.jpg" alt="" onclick="openFullImg(this.src)" />
+      <img src="./Images/img2.jpg" alt="" onclick="openFullImg(this.src)" />
+      <img src="./Images/img3.jpg" alt="" onclick="openFullImg(this.src)" />
+      <img src="./Images/img4.jpg" alt="" onclick="openFullImg(this.src)" />
+      <img src="./Images/img5.jpg" alt="" onclick="openFullImg(this.src)" />
+      <img src="./Images/img6.jpg" alt="" onclick="openFullImg(this.src)" />
+      <img src="./Images/img7.jpg" alt="" onclick="openFullImg(this.src)" />
+      <img src="./Images/img8.jpg" alt="" onclick="openFullImg(this.src)" />
+      <img src="./Images/img9.jpg" alt="" onclick="openFullImg(this.src)" />
+      <img src="./Images/img10.jpg" alt="" onclick="openFullImg(this.src)" />
+      <img src="./Images/img11.jpg" alt="" onclick="openFullImg(this.src)" />
+      <img src="./Images/img12.jpg" alt="" onclick="openFullImg(this.src)" />
     </div>
   </body>
 </html>
