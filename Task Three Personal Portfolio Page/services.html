@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      #portfolio-container {
+        background-color: #262525;
+        width: 100%;
+        height: 200vh;
+        font-family: "Poppins", sans-serif;
+        position: relative;
+      }
+
+      .main-container {
+        width: 80%;
+        height: 90%;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5rem;
+      }
+
+      .products {
+        width: 18rem;
+        box-shadow: 0 0 1rem #fff;
+        border-radius: 0.4rem;
+        overflow: hidden;
+        transition: all 0.5s;
+        cursor: pointer;
+      }
+
+      .products:hover {
+        box-shadow: 0 0 1rem #0cf;
+        scale: 1.05;
+      }
+
+      .products img {
+        width: 100%;
+        height: 60%;
+      }
+
+      .products h2 {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+
+      .products p {
+        text-align: center;
+        color: #fff;
+        padding: 0.5rem 0.5rem 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="portfolio-container">
+      <div class="nav-bar">
+        <div class="page-logo">
+          <a href="./index.html">
+            <img src="./Images/Bilal.png" alt="" />
+          </a>
+        </div>
+        <ul class="navlist">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./services.html">Services</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./projects.html">Project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-container">
+        <div class="products">
+          <img src="./Images/programming.jpg" alt="" />
+          <h2>Programming</h2>
+          <p>Programing of any Language.</p>
+        </div>
+        <div class="products">
+          <img src="./Images/web-design.jpg" alt="" />
+          <h2>Web Designing</h2>
+          <p>
+            Responsive or Animated Website Designing using Frontend Languages.
+          </p>
+        </div>
+        <div class="products">
+          <img src="./Images/web-developing.jpg" alt="" />
+          <h2>Web Development</h2>
+          <p>
+            Creating a full Responsive Websites using Frontend, Backend and
+            Database.
+          </p>
+        </div>
+        <div class="products">
+          <img src="./Images/graphic-designing.jpg" alt="" />
+          <h2>Graphic Designing</h2>
+          <p>
+            In Graphic Designing Making some Logos, Brand Designing, Packaging
+            Designing, Web Designing, Advertising Designing etc.
+          </p>
+        </div>
+        <div class="products">
+          <img src="./Images/video-editing.jpg" alt="" />
+          <h2>Video Editing</h2>
+          <p>
+            Video editors transform raw clips and video footage into
+            high-quality finished videos used to inform, engage, and inspire
+            their audience.
+          </p>
+        </div>
+        <div class="products">
+          <img src="./Images/ecommerce.jpg" alt="" />
+          <h2>Ecommerce</h2>
+          <p>
+            Online Ordering or Selling the things through ecommerce webstie.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
